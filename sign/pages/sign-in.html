@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    A.Hirst
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
+  <!-- Nepcha Analytics (nepcha.com) -->
+  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+</head>
+
+<body class="">
+  <div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+        <!-- Navbar -->
+        <nav
+          class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+          <div class="container-fluid pe-0">
+            <h1 class="navbar-brand font-weight-bolder ms-lg-0 ms-3 ">
+              A.Hirst
+            </h1>
+            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </span>
+            </button>
+
+          </div>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+    </div>
+  </div>
+  <main class="main-content  mt-0">
+    <section>
+      <div class="page-header min-vh-75">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto">
+              <div class="card card-plain mt-8">
+
+                <div class="card-body">
+                  <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSeQ8-Ta5naR9l8K6bnNG8PqWy4P67VpW70LncCVWDWDKqIwQQ/formResponse"
+                    target="_self" id="bootstrapForm" method="POST">
+                    <fieldset>
+                      <h2>Contact Information<br><small></small></h2>
+                    </fieldset>
+
+
+                    <!-- Field type: "short" id: "1633920210" -->
+                    <fieldset>
+                      <legend for="1633920210">REF NUM</legend>
+                      <div class="form-group">
+                        <input id="2005620554" type="text" name="entry.2005620554" class="form-control" required>
+                      </div>
+                    </fieldset>
+
+
+                    <!-- Field type: "short" id: "247281642" -->
+                    <fieldset>
+                      <legend for="247281642">FULL NAME</legend>
+                      <div class="form-group">
+                        <input id="562253676" type="text" name="entry.562253676" class="form-control" required>
+                      </div>
+                    </fieldset>
+
+
+                    <!-- Field type: "short" id: "790080973" -->
+                    <fieldset>
+                      <legend for="790080973">Address</legend>
+                      <div class="form-group">
+                        <input id="1065046570" type="text" name="entry.1065046570" class="form-control" required>
+                      </div>
+                    </fieldset>
+
+
+                    <!-- Field type: "short" id: "1770822543" -->
+                    <fieldset>
+                      <legend for="1770822543">Phone number</legend>
+                      <div class="form-group">
+                        <input id="1166974658" type="text" name="entry.1166974658" class="form-control" required>
+                      </div>
+                    </fieldset>
+
+
+                    <!-- Field type: "short" id: "1846923513" -->
+                    <fieldset>
+                      <legend for="1846923513">DOB</legend>
+                      <div class="form-group">
+                        <input id="839337160" type="date" name="entry.839337160" class="form-control" required>
+                      </div>
+                    </fieldset>
+
+
+                    <!-- Field type: "short" id: "227649005" -->
+                    <fieldset>
+                      <legend for="227649005">Email</legend>
+                      <div class="form-group">
+                        <input id="1045781291" type="text" name="entry.1045781291" class="form-control" required>
+                      </div>
+                    </fieldset>
+
+                    <input type="hidden" name="fvv" value="1">
+                    <input type="hidden" name="fbzx" value="3089874996625340891">
+                    <!--
+                    CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+                    This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+                    Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+                    We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+                -->
+                    <input type="hidden" name="pageHistory" value="0">
+
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                  </form>
+                </div>
+                <script>
+                  $('#bootstrapForm').submit(function (event) {
+                    event.preventDefault()
+                    var extraData = {}
+                    {
+                      /* Parsing input date id=839337160 */
+                      var dateField = $("#839337160_date").val()
+                      var timeField = $("#839337160_time").val()
+                      let d = new Date(dateField)
+                      if (!isNaN(d.getTime())) {
+                        extraData["entry.839337160_year"] = d.getFullYear()
+                        extraData["entry.839337160_month"] = d.getMonth() + 1
+                        extraData["entry.839337160_day"] = d.getUTCDate()
+                      }
+                      if (timeField && timeField.split(':').length >= 2) {
+                        let values = timeField.split(':')
+                        extraData["entry.839337160_hour"] = values[0]
+                        extraData["entry.839337160_minute"] = values[1]
+                      }
+                    }
+                    $('#bootstrapForm').ajaxSubmit({
+                      data: extraData,
+                      dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+                      success: function () {
+                        // Redirect to Google after form submission
+                        window.location = 'https://www.adonishirst.co.uk/pages/thanks.html';
+                      },
+                      error: function () {
+                        // Handle errors if the form submission fails
+                        alert('There was an error with the submission.');
+                      }
+                    })
+                  })
+
+                </script>
+                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                  <p class="mb-4 text-sm mx-auto">
+                    Don't share your code with anyone
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8">
+                <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6"
+                  style="background-image:url('https://images.theconversation.com/files/120358/original/image-20160427-30967-11frlg3.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=926&fit=clip')">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+  <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+</body>
+
+</html>
